@@ -1,13 +1,15 @@
-/* ini css */
+/* mengatur posisi header agar ada di tengah */
 .main-header {
   text-align: center;
 }
 
+/* mengatur elemen-elemen di dalamnya secara vertikal */
 .selection-content {
   display: flex;
   flex-direction: column;
 }
 
+/* mengatur property button */
 .selection-btn {
   height: 32px;
   border: none;
@@ -26,7 +28,7 @@
   border: 1px solid;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin: 0;
+  margin-top: 20px;
   background: cornflowerblue;
   text-align: center;
 }
@@ -36,6 +38,7 @@
   flex-direction: column;
 }
 
+/* menampilkan gambar segitiga  */
 .luas-segitiga-img {
   height: 300px;
   width: 300px;
@@ -75,4 +78,39 @@ input[type="number"] {
 
 .main-content > aside {
   flex: 1;
+}
+
+.luas-jajar-genjang-header {
+  border: 1px solid;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-top: 20px;
+  background: cornflowerblue;
+  text-align: center;
+}
+
+.luas-jajar-genjang-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* menampilkan gambar jajar genjang  */
+.luas-jajar-genjang-img {
+  height: 300px;
+  width: 400px;
+  background-image: url(https://chochoirunnisa.wordpress.com/wp-content/uploads/2012/12/mfndf.jpeg);
+  background-size: cover;
+  background-position: center;
+  align-self: center;
+}
+
+.luas-jajar-genjang-form-header {
+  text-align: center;
+}
+
+/* membuat responsive web */
+@media only screen and (max-width: 480px) {
+  .main-content {
+    flex-direction: column;
+  }
 }
